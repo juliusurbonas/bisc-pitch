@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Baltic Hybrid-Threat Barometer</title>
+<title>Baltic Influence Operations / Institutional Response Suite</title>
 <style>
 * { box-sizing:border-box; }
 body {
@@ -22,8 +22,8 @@ body {
 h1 { margin:0 0 7px; font-size:25px; font-weight:600; }
 .subtitle { margin:0; color:#666; font-size:14px; }
 .layout {
-    max-width:1500px;
-    margin:0 auto;
+    max-width:15px;
+    margin: auto;
     display:grid;
     grid-template-columns:280px 1fr;
     min-height:calc(100vh - 100px);
@@ -105,35 +105,14 @@ h1 { margin:0 0 7px; font-size:25px; font-weight:600; }
 <body>
 <header class="header">
 <div class="header-inner">
-<h1>Baltic Hybrid-Threat Barometer</h1>
-<p class="subtitle">
-Incident Database incidence layer with GDELT reporting and
-institutional-response analysis
-</p>
+<h1>Baltic Influence Operations / Institutional Response Suite</h1>
 </div>
 </header>
 <div class="layout">
 <aside class="sidebar">
         <div class="nav-section">
             <div class="nav-section-title">
-                DOCUMENTATION
-            </div>
-        
-            <button
-                class="nav-button active"
-                data-file="00_about_methodology.html"
-                data-title="About / methodology"
-                onclick="showChart(this)"
-            >
-                <span class="nav-number">
-                    0
-                </span>
-                <span>About / methodology</span>
-            </button>
-            </div>
-        <div class="nav-section">
-            <div class="nav-section-title">
-                HYBRID THREAT DATABASE
+                INFLUENCE OPERATION / INCIDENT DATABASE
             </div>
         
             <button
@@ -145,7 +124,7 @@ institutional-response analysis
                 <span class="nav-number">
                     1
                 </span>
-                <span>Overall hybrid threat incidence</span>
+                <span>Overall incidence</span>
             </button>
             
             <button
@@ -169,7 +148,7 @@ institutional-response analysis
                 <span class="nav-number">
                     3
                 </span>
-                <span>Lithuania / Latvia / Estonia / Regional</span>
+                <span>Country/regional split</span>
             </button>
             
             <button
@@ -181,7 +160,7 @@ institutional-response analysis
                 <span class="nav-number">
                     4
                 </span>
-                <span>Category × month heatmap</span>
+                <span>Threat category × time heatmap</span>
             </button>
             
             <button
@@ -193,7 +172,7 @@ institutional-response analysis
                 <span class="nav-number">
                     5
                 </span>
-                <span>Category small multiples</span>
+                <span>By-category view</span>
             </button>
             
             <button
@@ -210,7 +189,7 @@ institutional-response analysis
             </div>
         <div class="nav-section">
             <div class="nav-section-title">
-                REPORTING DATA ANALYSIS
+                GDELT REPORTING DATA ANALYSIS
             </div>
         
             <button
@@ -234,7 +213,7 @@ institutional-response analysis
                 <span class="nav-number">
                     8
                 </span>
-                <span>Reporting category × month heatmap</span>
+                <span>Reporting category × time heatmap</span>
             </button>
             
             <button
@@ -248,6 +227,10 @@ institutional-response analysis
                 </span>
                 <span>Reporting categories × actual incidence</span>
             </button>
+        <div class="nav-section">
+            <div class="nav-section-title">
+                INSTITUTIONAL RESPONSE ANALYSIS
+            </div>
             
             <button
                 class="nav-button"
@@ -340,7 +323,7 @@ institutional-response analysis
             </div></aside>
 <main class="content">
 <div class="chart-header">
-<h2 class="chart-title" id="chartTitle">Overall hybrid threat incidence</h2>
+<h2 class="chart-title" id="chartTitle">Overall incidence</h2>
 </div>
 <iframe id="chartFrame" class="chart-frame"
         src="00_about_methodology.html"
@@ -348,10 +331,10 @@ institutional-response analysis
 <div class="note">
 <strong>Interpretation:</strong>
 Incident Database measures event-level incidents, while GDELT measures
-reporting/event observations. The two layers are deliberately kept
-separate. Where GDELT is matched to an actual incident, the matching rule
-uses a ±3-day window plus overlapping threat category or analytical family;
-this indicates correspondence rather than proving that an individual
+reporting and, while additional research has not been conducted, institutional
+responses, too. Where GDELT is matched to an actual incident (or a response to it),
+the matching rule uses a ±3-day window plus overlapping threat category or analytical 
+family; this indicates correspondence rather than proving that an individual
 article describes the exact incident. Response intensity is an analytical
 weighting, not a measure of objective response effectiveness.
 </div>
